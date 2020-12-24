@@ -1,0 +1,963 @@
+/* margin padding reset */
+body, div, p,  ul, ol, li, dl, dt, dd, table, th ,td, img, figure,
+h1, h2, h3 ,h4 ,h5, h6, form, select
+{ margin: 0; padding: 0; }
+
+html
+{ -webkit-text-size-adjust: 100%; }
+
+body
+{ -webkit-font-smoothing: antialiased; }
+
+/* remove list point mark */
+ul, ol
+{ list-style: none; }
+
+/* remove border & off descender */
+img
+{ border: 0; vertical-align: middle; }
+
+/* remove descender */
+svg, input, select, textarea, label
+{ vertical-align: middle; }
+
+/* set collapse */
+table
+{ border-collapse: collapse; }
+
+/* break word for all elements */
+*, *:before, *:after
+{ word-break: break-all; -webkit-box-sizing: border-box; -moz-box-sizing: border-box; box-sizing: border-box; }
+
+pre
+{ white-space: pre-wrap; }
+
+address
+{ font-style: normal; }
+
+p
+{ line-height: 1.5; }
+
+html {
+  font-size: 14px;
+  font-family: 'ヒラギノ角ゴ Pro', 'Hiragino Kaku Gothic Pro', 'メイリオ', 'Meiryo', sans-serif;
+  color: #222222;
+}
+
+input, select, textarea {
+  color: #222222;
+}
+
+a {
+  color: #222222;
+  text-decoration: none;
+}
+
+body {
+  font-family: 'Noto Sans JP', sans-serif;
+  font-weight: 400;
+}
+
+main {
+  display: block;
+}
+
+select {
+  -webkit-appearance: none;
+  -moz-appearance: none;
+  appearance: none;
+}
+
+input:focus {
+  outline: 0;
+}
+
+/*ヘッダー*/
+.site-header {
+    width: 100%;
+    position: absolute;
+    padding-top: 20px;
+    padding-bottom: 20px;
+}
+
+.content-width {
+    max-width: 1140px;
+    padding-left: 50px;
+    padding-right: 50px;
+    margin-left: auto;
+    margin-right: auto;
+    position: relative;
+}
+
+.contents-tidy {
+    display: flex;
+    justify-content: space-between;
+}
+
+.hover-opacity {
+    transition: opacity .2s;
+}
+
+a {
+    color: #222;
+    text-decoration: none;
+}
+
+.header-logo > .header-logo-pc {
+    width: auto;
+    height: 20px;
+}
+
+.header-logo > .header-logo-sp {
+    display: none;
+}
+
+.header-nav-hamburger {
+    display: none;
+}
+
+.header-nav-list.contents-tidy {
+    align-items: center;
+}
+
+.header-nav-item {
+    display: block;
+}
+
+.header-nav .header-nav-item > span:first-child {
+    font-family: 'Lato', sans-serif;
+}
+
+.header-nav .header-nav-item > span:last-child {
+    font-size: 10px;
+}
+
+.header-nav .header-nav-item > span {
+    display: block;
+    font-weight: bold;
+    text-align: center;
+}
+
+.header-nav .header-nav-list > li + li {
+    margin-left: 30px;
+}
+
+.header-nav-list > li + li:last-child {
+    margin-left: 20px;
+}
+
+.header-button {
+    width: 150px;
+}
+
+.link-button.menu {
+    height: 40px;
+    font-size: 12px;
+}
+
+.link-button:visited {
+    color: #fff;
+}
+
+.link-button {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  color: #FFFFFF;
+  background-color: #f79314;
+  border-radius: 30px;
+  text-decoration: none;
+  text-align: center;
+  align-items: center;
+  font-weight: bold;
+  width: 100%;
+  height: 60px;
+  font-size: 20px;
+  border: none;
+}
+
+/*01.firstview*/
+.section-top-hero {
+  padding-top: 190px;
+  padding-bottom: 28px;
+  background-image: url(../images/top-hero.png);
+  background-size: auto 100%;
+  background-position: right 0;
+  background-repeat: no-repeat;
+}
+
+.top-hero-box {
+  position: relative;
+  max-width: 337px;
+}
+
+.top-hero-box .top-hero-heading > img {
+    width: 100%;
+    height: auto;
+}
+
+.top-hero-box .top-hero-text {
+    font-size: 20px;
+    font-weight: 700;
+    text-align: left;
+    white-space: nowrap;
+    line-height: 1.7;
+    margin-top: 30px;
+}
+
+.top-hero-box .top-hero-text > span {
+    color: #f79314;
+}
+
+.link-button.no-subtitle {
+    font-size: 16px;
+}
+
+.hover-opacity:hover {
+    opacity: .7;
+}
+
+.top-hero-button  {
+    margin-top: 30px;
+}
+    
+.top-hero-box .No1-notation img {
+    width: 154px;
+    height: 154px;
+}
+
+.No1-notation {
+    margin: 0;
+    position: absolute;
+    top: 0;
+    right: -170px;
+}
+
+.section-top-hero .proviso {
+    color: #888;
+    font-size: 10px;
+    max-width: 512px;
+    padding-top: 132px;
+}
+
+/*02.POTEPAN CAMPとは*/
+.main-section {
+    padding-bottom: 80px;
+}
+
+.top-about {
+    background-color: #f79314;
+    padding-top: 45px;
+}
+
+.banner-for-students {
+    width: 100%;
+    margin-bottom: 50px;
+}
+
+.banner-for-students--sp {
+    display: none;
+}
+
+.top-about .contents-tidy {
+    align-items: center;
+}
+
+.about-text {
+    color: #FFFFFF;
+    width: 53%;
+    font-weight: bold;
+}
+
+.about-text h2 {
+    font-size: 40px;
+    letter-spacing: 1px;
+}
+
+.about-text h2 > span {
+    font-size: 50px;
+    font-family: 'Lato', sans-serif;
+    font-weight: 900;
+}
+
+.top-about-button {
+    width: 300px;
+}
+
+.link-button.inversion {
+    color: #f79314;
+    background-color: #FFFFFF;
+    margin-right: 10px;
+}
+
+.about-text p {
+    font-weight: 700;
+    margin-top: 15px;
+    line-height: 2.3;
+}
+
+.link-button span:first-child {
+    letter-spacing: 4px;
+    line-height: 1.5;
+    font-family: 'Lato', sans-serif;
+}
+
+.link-button span:last-child {
+    font-size: 14px;
+}
+ 
+/*03.POTEOAN CAMPの特徴*/
+.main-section {
+    padding-top: 75px;
+    padding-bottom: 80px;
+}
+
+.section-header.contents-tidy {
+    flex-direction: column;
+    align-items: center;
+}
+
+.section-header {
+    width: 100%;
+}
+
+.main-section .section-header + .section-content {
+    margin-top: 60px;
+}
+
+.section-main-heading {
+    font-size: 46px;
+    font-weight: bold;
+}
+
+.section-header h2 > span {
+    font-size: 50px;
+    font-family: 'Lato', sans-serif;
+    font-weight: 900;
+}
+
+.section-sub-heading {
+    display: inline-block;
+    margin-top: 10px;
+    font-weight: bold;
+    font-size: 16px;
+    text-align: center;
+}
+
+.section-header.bottom-line::after {
+    content: '';
+    display: block;
+    border-bottom: solid 6px #f79314;
+    width: 50px;
+    margin-top: 20px;
+}
+
+.desc-list .list-number {
+    margin-top: 110px;
+}
+
+.desc-list > li {
+    background-color: #fcfaf5;
+    border-radius: 20px;
+    text-align: center;
+    padding: 40px;
+}
+
+.list-no {
+  width: 100px;
+  height: 100px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin: -90px auto 0 auto;
+  background-color: #fcfaf5;
+  border-radius: 50%;
+  color: #f79314;
+  font-weight: bold;
+  font-size: 40px;
+}
+
+.desc-list .list-title {
+    font-weight: bold;
+    font-size: 30px;
+    margin-top: -20px;
+    letter-spacing: 1px;
+}
+
+.desc-list .list-text {
+    font-size: 16px;
+    margin-top: 30px;
+    letter-spacing: 1.5px;
+    font-weight: 600;
+    line-height: 2;
+}
+
+.desc-list .example {
+    background-color: #FFFFFF;
+    width: 100%;
+    margin-top: 40px;
+    border-radius: 20px;
+    padding: 30px;
+}
+
+.example-title-heading {
+    display: inline-block;
+    font-weight: bold;
+    font-size: 24px;
+    vertical-align: bottom;
+    line-height: 1;
+}
+
+.desc-list .example-title img {
+    margin-left: 10px;
+    width: 34px;
+    height: auto;
+}
+
+.desc-list .example-title::after {
+    content: '';
+    display: block;
+    border-bottom: solid 4px #f79314;
+    margin-top: 10px;
+}
+
+.desc-list .example-contents {
+    margin-top: 15px;
+}
+
+.example-contents.contents-tidy {
+    flex-wrap: wrap;
+}
+
+.desc-list .example-contents > li {
+    width: 25%;
+}
+
+.desc-list .example-list img {
+    width: 100%;
+    height: auto;
+}
+
+.desc-list > li + li {
+    margin-top: 90px;
+}
+
+.desc-list .list-text span {
+    color: #f79314;
+    font-size: 30px;
+    font-family: 'Lato', sans-serif;
+    font-weight: 900;
+    line-height: 1;
+}
+
+.desc-list .example.performance {
+    padding: 40px 70px;
+}
+
+.desc-list .example-list > li {
+    width: calc(100% / 3);
+}
+
+.engineer-list {
+    margin-top: 45px;
+    margin-left: -15px;
+    margin-right: -15px;
+}
+
+.engineer-list .engineer-box {
+    background-color: #FFFFFF;
+    border-radius: 15px;
+    margin: 0 15px;
+    width: calc(100% / 3);
+}
+
+.engineer-media {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    font-weight: bold;
+    padding: 20px;
+}
+
+.engineer-company-logo {
+    height: 100px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.engineer-company-logo > img {
+    width: 100%;
+}
+
+.engineer-profile {
+    display: flex;
+    align-items: center;
+    width: 100%;
+}
+
+.engineer-name.contents-tidy {
+    flex-direction: column;
+}
+
+.engineer-name {
+    text-align: start;
+    margin-left: 15px;
+    font-size: 20px;
+}
+
+.engineer-name > span {
+    color: #f79314;
+    font-size: 14px;
+}
+ 
+.engineer-text {
+    width: 100%;
+    position: relative;
+    background-color: #f6f6f6;
+    padding: 20px;
+    border-radius: 10px;
+    margin-top: 20px;
+    text-align: start;
+}
+
+/*04.POTEPAN CAMPの選べるコース*/
+.main-section.top-potepan {
+    position: relative;
+    overflow: hidden;
+    padding-top: 40px;
+    padding-bottom: 80px;
+    background-color: #F6F6F6;
+}
+
+.main-section.top-potepan {
+    position: relative;
+    overflow: hidden;
+    padding-top: 40px;
+    padding-bottom: 80px;
+    background-color: #F6F6F6;
+}
+
+.top-potepan .content-width {
+    background-image: url(../images/bg-section-top-course.png);
+    background-size: 281px 275px;
+    background-repeat: no-repeat;
+    background-position: calc(100% - 50px) top;
+    padding-top: 35px;
+}
+
+.course-media {
+    font-weight: bold;
+    padding: 30px;
+    background-color: #FFFFFF;
+}
+
+.course-media.open .course-title {
+    border-image: linear-gradient(to right, #ff6d00 0%, #f79214 100%);
+    border-image-slice: 1;
+}
+ 
+.course-title.contents-tidy {
+    justify-content: center;
+    align-items: center;
+}
+
+.course-title {
+    width: 30%;
+    margin-left: -50px;
+    margin-right: 30px;
+    border: solid 3px;
+}
+
+.course-contents {
+    width: calc(70% + 30px);
+    position: relative;
+}
+
+.course-media.open .course-text {
+    color: #f79314;
+}
+
+.course-contents > div {
+    margin-top: 20px;
+}
+
+.course-contents > div p {
+    display: inline-block;
+    font-weight: 400;
+    color: #FFFFFF;
+    background: linear-gradient(90deg, #212121, #444444);
+    padding: 2px 20px;
+    border-radius: 20px;
+}
+
+.conditions-list {
+    margin-top: 7px;
+    padding-bottom: 20px;
+}
+
+.list-marker {
+    margin-left: 1.9em;
+    text-indent: -1.9em;
+}
+
+.list-marker::before {
+    content: '';
+    display: inline-block;
+    width: 8px;
+    height: 8px;
+    border-radius: 50%;
+    vertical-align: middle;
+    background-color: #f79214;
+    margin: 0 10px;
+}
+
+.course-link {
+    position: absolute;
+    right: 20px;
+    bottom: 0;
+    font-size: 12px;
+    color: #999999;
+}
+
+.course-link::after {
+    content: '';
+    display: block;
+    position: absolute;
+    width: 10px;
+    height: 10px;
+    bottom: 4px;
+    right: -18px;
+    border-right: solid 3px #F79214;
+    border-top: solid 3px #F79214;
+    transform: rotate(45deg);
+}
+
+.course-media.career .course-text {
+    color: #f75307;
+}
+
+.course-media.career .course-title {
+    border-image: linear-gradient(to right, #f79214 0%, #f74e06 100%);
+    border-image-slice: 1;
+}
+
+.section-button {
+    margin-top: 60px;
+    width: 300px;
+    margin-left: auto;
+    margin-right: auto
+}
+
+05.サービスの想い
+.main-section.top-service, .main-section.top-works {
+    background-color: #fcfaf5;
+}
+
+.message-title {
+    display: inline-block;
+    font-size: 50px;
+    color: #FF802C;
+    background: -webkit-linear-gradient(0deg, #FF802C, #F79214);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    line-height: 1;
+    letter-spacing: 3px;
+    position: relative;
+    z-index: 1;
+    margin-left: 20px;
+    font-family: 'Lato', sans-serif;
+    font-weight: 900;
+}
+
+.message-contents.contents-tidy {
+    align-items: center;
+}
+
+.message-contents {
+    margin-top: -20px;
+    position: relative;
+}
+
+.message-text {
+    background-color: #FFFFFF;
+    padding: 40px 150px 40px 40px;
+    margin-right: -100px;
+}
+
+.message-text p {
+    line-height: 2;
+    font-weight: 500;
+}
+
+.message-text p + p {
+    margin-top: 40px;
+}
+
+.message-thumbnail {
+    position: relative;
+}
+
+.message-thumbnail p {
+    position: absolute;
+    padding: 20px;
+    font-size: 16px;
+    font-weight: bold;
+    color: #FFFFFF;
+    text-shadow: 1px 1px 10px #808080;
+}
+
+.message-thumbnail p span {
+    font-size: 24px;
+}
+
+/*06.受講生の声*/
+.interview-list {
+    margin-left: -20px;
+    margin-right: -20px;
+}
+
+.interview-list > li {
+    padding-left: 20px;
+    padding-right: 20px;
+    width: calc(100% / 3);
+}
+
+.interview-media .interview-media-thumbnail {
+    position: relative;
+    padding-top: 100%;
+}
+
+.interview-media-thumbnail {
+    overflow: hidden;
+}
+
+.interview-media .interview-media-thumbnail img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    position: absolute;
+    top: 0;
+    left: 0;
+}
+
+.pc-dn {
+    display: none;
+}
+
+.interview-media .interview-thumbnail-titlebox {
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    padding: 80px 20px 15px;
+    background: -webkit-linear-gradient(to top, rgba(0, 0, 0, 0.8) 55%, rgba(30, 30, 30, 0.7), rgba(50, 50, 50, 0));
+    background: linear-gradient(to top, rgba(0, 0, 0, 0.8) 55%, rgba(30, 30, 30, 0.7), rgba(50, 50, 50, 0));
+}
+
+.interview-media .interview-thumbnail-titlebox .interview-thumbnail-title {
+    font-size: 16px;
+    font-weight: bold;
+    color: #F79314
+}
+
+.interview-media .interview-thumbnail-titlebox .interview-thumbnail-subtitle {
+    font-size: 16px;
+    font-weight: bold;
+    color: #FFFFFF;
+    margin-top: 5px;
+    padding-top: 4px;
+    border-top: 1px solid #FFFFFF;
+}
+.interview-media .interview-thumbnail-titlebox .interview-thumbnail-subtitle .name {
+    font-size: 20px;
+}
+
+.interview-media .interview-thumbnail-titlebox .interview-thumbnail-subtitle > :last-child {
+    font-size: 12px;
+    margin-left: 15px
+}
+
+interview-media .interview-media-text {
+    font-size: 15px;
+    font-weight: bold;
+    margin-top: 15px;
+    line-height: 1.8;
+}
+
+/*07.POTEPAN CAMPが運用するサービス*/
+.service-list {
+    margin-right: -20px;
+    margin-left: -20px;
+}
+
+.service-list > li {
+    padding-right: 20px;
+    padding-left: 20px;
+    width: calc(100% / 3);
+}
+
+.service-media-thumbnail.red {
+    border-color: #fc6803;
+}
+
+.service-media-thumbnail {
+    display: flex;
+    align-items: center;
+    background-color: #FFFFFF;
+    border: solid 2px;
+    border-radius: 10px;
+    padding: 0 20px;
+    height: 190px;
+    box-sizing: border-box;
+}
+
+.service-media-thumbnail img {
+    width: 100%;
+    height: auto;
+}
+
+.service-media-text {
+    margin-top: 20px;
+    font-weight: bold;
+    font-size: 16px;
+    line-height: 1.8;
+}
+
+/*フッター*/
+.site-footer {
+    padding-top: 80px;
+    padding-bottom: 40px;
+    background-color: #f79314;
+}
+
+.page-top-button.contents-tidy {
+    align-items: center;
+    justify-content: center;
+}
+
+.page-top-button {
+    position: absolute;
+    width: 50px;
+    height: 50px;
+    top: -105px;
+    right: 50px;
+    border-radius: 50%;
+    background-color: #FFFFFF;
+    box-shadow: 0 12px 30px -15px;
+    transition: .2s;
+}
+
+.page-top-arrow {
+    display: inline-block;
+    height: 10px;
+    width: 10px;
+    border-left: solid 3px #F79214;
+    border-top: solid 3px #F79214;
+    transform: rotate(45deg);
+    text-decoration: none;
+    text-indent: 100%;
+    white-space: nowrap;
+    overflow: hidden;
+}
+
+.site-footer-main .footer-nav {
+    order: 2;
+}
+
+.footer-character > img {
+    width: auto;
+    height: 70px;
+}
+
+.site-footer-main .footer-info {
+    order: 1;
+}
+
+.footer-nav-item:link, .footer-nav-item:visited {
+    color: #FFFFFF;
+}
+
+.footer-nav a {
+    display: inline-block;
+    padding-bottom: 25px;
+}
+
+.footer-nav-item {
+    font-size: 16px;
+    font-weight: bold;
+    color: #FFFFFF;
+}
+
+.footer-nav-item > span {
+    font-weight: normal;
+    margin-left: 1em;
+}
+
+.site-footer-main .footer-character {
+    order: 3;
+    align-self: flex-end;
+}
+
+.site-footer-main .footer-info {
+    order: 1;
+}
+
+.footer-info {
+    display: block;
+    color: #FFFFFF;
+}
+
+.footer-info .footer-logo {
+    display: inline-block;
+    max-width: 280px;
+}
+
+.footer-info .footer-logo > img {
+    width: 100%;
+    height: auto;
+}
+
+.footer-info .footer-logo + .footer-company {
+    margin-top: 25px;
+}
+
+.footer-info .footer-company, .footer-info .footer-address {
+    font-size: 16px;
+    font-weight: bold;
+}
+
+.footer-info .footer-company + .footer-address {
+    margin-top: 10px;
+}
+
+.footer-info .footer-address + .footer-social {
+    margin-top: 35px;
+}
+
+.footer-info .footer-social {
+    display: flex;
+}
+
+.footer-info .footer-social-item {
+    display: block;
+    max-width: 60px;
+}
+
+.footer-social-item {
+   margin-left: -15px;
+}
+
+.footer-info .footer-social-item > img {
+    width: 100%;
+    height: auto;
+}
+
+.site-footer .site-footer-main + .site-footer-sub {
+    margin-top: 60px;
+}
+
+.footer-copyright {
+    color: #FFFFFF;
+    font-size: 12px;
+}
