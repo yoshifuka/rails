@@ -2,27 +2,28 @@
 <html lang="ja">
   <head>
     <meta charset="utf-8">
-    <title>サイト模写</title>
-    <link rel="stylesheet" href="css/style.css">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>課題2</title>
+    <link rel="stylesheet" href="style.css">
   </head>
   <body class="page-top">
-    <!--ヘッダー-->
     <header class="site-header">
       <div class="site-header-inner contents-tidy content-width">
         <div>
-          <a class="header-logo hover-opacity" href="https://camp.potepan.com">
+          <a class="header-logo hover-opacity" href="https://camp.potepan.com/">
             <img class="header-logo-pc" src="https://camp.potepan.com/wp-content/themes/potepancamp/assets/images/header-logo.png" alt="POTEPAN CAMP">
             <img class="header-logo-sp" src="https://camp.potepan.com/wp-content/themes/potepancamp/assets/images/header-logo-sp.png" alt="POTEPAN CAMP">
           </a>
         </div>
         <div>
           <nav class="header-nav">
-            <div class="header-nav-hamburger jsc-hamburger">
+            <input type="checkbox" id="menu-btn-check">
+            <label for="menu-btn-check" class="menu-btn header-nav-hamburger is-active">
               <span class="header-nav-hamburger-line"></span>
               <span class="header-nav-hamburger-line"></span>
               <span class="header-nav-hamburger-line"></span>
-            </div>
-            <ul class="header-nav-list jsc-hamburger-list contents-tidy">
+            </label>
+            <ul class="header-nav-list contents-tidy is-scroll is-active">
               <li class="header-nav-item-outline">
                 <a class="header-nav-item hover-opacity" href="https://camp.potepan.com/about">
                   <span>ABOUT</span>
@@ -36,7 +37,7 @@
                 </a>
               </li>
               <li class="header-nav-item-outline">
-                <a class="header-nav-item hover-opacity" href="https://camp.potepan.com/course">
+                <a class="header-nav-item hover-opacity current" href="https://camp.potepan.com/course">
                   <span>COURSE</span>
                   <span>コース・料金</span>
                 </a>
@@ -54,14 +55,14 @@
                 </a>
               </li>
               <li class="header-nav-item-outline">
-                <a class="header-nav-item hover- current" href="https://camp.potepan.com/company">
+                <a class="header-nav-item hover-opacity" href="https://camp.potepan.com/faq">
                   <span>COMPANY</span>
                   <span>会社概要</span>
                 </a>
               </li>
               <li class="header-button-outline">
                 <div class="header-button">
-                  <a href="https://camp.potepan.com/contact" class="link-button hover-opacity menu">無料カウンセリング</a>
+                  <a class="link-button hover-opacity menu" href="https://camp.potepan.com/contact">無料カウンセリング</a>
                 </div>
               </li>
             </ul>
@@ -69,435 +70,440 @@
         </div>
       </div>
     </header>
-    
-    <main> 
-      <!--01.firstview-->
-      <section class="section-top-hero">
+    <!--コース・料金-->
+    <main>
+      <div class="section-underlayer-hero course">
         <div class="content-width">
-          <div class="top-hero-box">
-            <h1 class="top-hero-heading">
-              <img src="https://camp.potepan.com/wp-content/themes/potepancamp/assets/images/top-hero-logo.png" alt="POTEPAN CAMP">
-            </h1>
-            <p class="top-hero-text">
-              本気で
-              <span>Webエンジニア</span>
-              を目指すなら、
-              <br>本気のプログラミング学習。
-            </p>
-            <div class="top-hero-button">
-              <a href="https://camp.potepan.com/contact" class="link-button hover-opacity no-subtitle">無料カウンセリング</a>
-            </div>
-            <div class="No1-notation">
-              <img src="https://camp.potepan.com/wp-content/themes/potepancamp/assets/images/home/badge-number1.svg" alt="プログラミングスクールでWebエンジニア輩出No.1">
-            </div>
-          </div>
-          <div class="proviso">
-            <p>※ショッパーズアイ「プログラミングスクール10社を対象にしたサイト比較イメージ調査（2020 年 5 月 22 日～25日）」より全国の22～49歳の男女691名へのインターネット調査</p>
-          </div>
+          <h1 class="underlayer-hero-heading underlayer-hero-heading course">コース・料金</h1>
         </div>
-      </section>
-      <!--02.POTEPAN CAMPとは-->
-      <section class="main-section top-about">
-       <div class="content-width">
-         <a href="https://camp.potepan.com/contact">
-           <img href src="https://camp.potepan.com/wp-content/themes/potepancamp/assets/images/about/bnr-gakuwari-pc@2x.png" class="banner-for-students banner-for-students--pc" alt="学割バナー">
-           <img href src="https://camp.potepan.com/wp-content/themes/potepancamp/assets/images/about/bnr-gakuwari-pc@2x.png" class="banner-for-students banner-for-students--sp" alt="学割バナー">
-         </a>
-       </div>
-       <div class="content-width top-about-content contents-tidy">
-         <div class="about-text">
-           <h2>
-             <span>POTEPAN CAMP</span>
-             とは
-           </h2>
-           <p>卒業生の多くがWebエンジニアに転職成功している、実績豊富なプログラミングスクール。優秀なレビュアー陣と実践的なカリキュラムで、現場で求められる開発スキルを身につけることが可能です。</p>
-         </div>
-         <div class="top-about-button">
-           <a href="https://camp.potepan.com/about/" class="link-button hover-opacity inversion">
-             <span>ABOUT</span>
-             <span>はじめての方へ</span>
-           </a>
-         </div>
-       </div>
-      </section>
-      <!--03.POTEOAN CAMPの特徴    -->
-      <section class="main-section">
+      </div>
+      <section class="main-section course-detail">
         <div class="content-width">
           <header class="section-header contents-tidy bottom-line">
-            <h2 class="section-main-heading">
-              <span>POTEPAN CAMP</span>
-              の特徴
+            <h2 class="section-main-heading about-title">
+              <span class="sp-br">POTEPAN CAMP</span>
+              コースについて
             </h2>
-            <p class="section-sub-heading">
-              <span>POTEPAN CAMP</span>
-              "が選ばれる理由"
+          </header>
+          <div class="section-content">
+            <p class="detail-text">
+              POTEPAN CAMPでは複数のコースをご用意しており、
+              <span class="pc-br">受講頂く方の学習状況や目的を基に最適なコースをご案内しております。</span>
             </p>
-          </header>
-          <div class="section-content">
-            <ol class="desc-list list-number">
-              <li>
-                <p class="list-no">01</p>
-                <h3 class="list-title">豊富な転職実績</h3>
-                <p class="list-text">
-                  転職サポート希望者の多くが Web系エンジニアとして転職成功しております。
-                  <br class="sp-dn">
-                  10000人以上の利用者を抱える転職サポートサービスを運営する当社だからこそ、
-                  <br class="sp-dn">
-                  企業の求めている人材像に即した教育カリキュラムを反映できます。
-                </p>
-                <div class="example">
-                  <div class="example-title">
-                    <h4 class="example-title-heading">転職先企業の例</h4>
-                    <img src="https://camp.potepan.com/wp-content/themes/potepancamp/assets/images/desc-list-example-title.png"> 
-                  </div>
-                  <ul class="example-contents contents-tidy">
-                    <li>
-                      <img src="https://camp.potepan.com/wp-content/themes/potepancamp/assets/images/example-company01.png">
-                    </li>
-                    <li>
-                      <img src="https://camp.potepan.com/wp-content/themes/potepancamp/assets/images/example-company02.png">
-                    </li>
-                    <li>
-                      <img src="https://camp.potepan.com/wp-content/themes/potepancamp/assets/images/engineer-conpany-3.png">
-                    </li>
-                    <li>
-                      <img src="https://camp.potepan.com/wp-content/themes/potepancamp/assets/images/example-company04.png">
-                    </li>
-                    <li>
-                      <img src="https://camp.potepan.com/wp-content/themes/potepancamp/assets/images/example-company05.png">
-                    </li>
-                    <li>
-                      <img src="https://camp.potepan.com/wp-content/themes/potepancamp/assets/images/example-company06.png">
-                    </li>
-                    <li>
-                      <img src="https://camp.potepan.com/wp-content/themes/potepancamp/assets/images/example-company07.png">
-                    </li>
-                    <li>
-                      <img src="https://camp.potepan.com/wp-content/themes/potepancamp/assets/images/example-company08.png">
-                    </li>
-                  </ul>
-                </div>
-              </li>
-              <li>
-                <p class="list-no">02</p>
-                <h3 class="list-title">多くの受講者受入実績</h3>
-                <p class="list-text">
-                   サービス開始以降、累計
-                   <span>700</span>
-                   人以上がポテパンキャンプを受講。
-                </p>
-                <div class="example performance">
-                  <ul class="example-list contents-tidy">
-                    <li>
-                      <img src="https://camp.potepan.com/wp-content/themes/potepancamp/assets/images/example-data01.png" alt="example-data01">
-                    </li>
-                    <li>
-                      <img src="https://camp.potepan.com/wp-content/themes/potepancamp/assets/images/example-data02.png" alt="example-data02">
-                    </li>
-                    <li>
-                      <img src="https://camp.potepan.com/wp-content/themes/potepancamp/assets/images/example-data03.png" alt="example-data03">
-                    </li>
-                  </ul>
-                </div>
-              </li>
-              <li>
-                <p class="list-no">03</p>
-                <h3 class="list-title">現役エンジニアが講師</h3>
-                <p class="list-text">
-                   サービス開始以降、
-                   <span>50</span>
-                   人以上の現役エンジニアが講師として活躍中。
-                </p>
-                <div id="jsi-engineer-list" class="engineer-list contents-tidy">
-                  <div class="engineer-box">
-                    <div class="engineer-media">
-                      <div class="engineer-company-logo">
-                        <img src="https://camp.potepan.com/wp-content/themes/potepancamp/assets/images/engineer-conpany-logo01.png" alt="engineer-conpany-logo01">
-                      </div>
-                      <div class="engineer-profile">
-                        <img src="https://camp.potepan.com/wp-content/themes/potepancamp/assets/images/engineer-logo01.png" alt="engineer-logo01">
-                        <p class="engineer-name contents-tidy">
-                          <span>株式会社grooves</span>
-                          Railsエンジニア
-                        </p>
-                      </div>
-                      <div class="engineer-text">
-                        <p>
-                          現場のように細かくレビューしていきますので、ただ動くだけではなく、保守性の高いコードが書けるように一緒に頑張っていきましょう。</p>
-                      </div>
-                    </div>
-                  </div>
-                  <div class="engineer-box">
-                    <div class="engineer-media">
-                      <div class="engineer-company-logo">
-                        <img src="https://camp.potepan.com/wp-content/themes/potepancamp/assets/images/engineer-conpany-logo02.png" alt="engineer-conpany-logo02">
-                      </div>
-                      <div class="engineer-profile">
-                        <img src="https://camp.potepan.com/wp-content/themes/potepancamp/assets/images/engineer-logo02.png" alt="engineer-logo02">
-                          <p class="engineer-name contents-tidy">
-                          <span>株式会社freee</span>Railsエンジニア
-                        </p>
-                      </div>
-                      <div class="engineer-text">
-                        <p>現役Webエンジニアにレビューしてもらえる機会は貴重です。貰ったフィードバックをしっかりと身につけて自分の糧にしていきましょう。</p>
-                      </div>
-                    </div>
-                  </div>
-                  <div class="engineer-box">
-                    <div class="engineer-media">
-                      <div class="engineer-company-logo">
-                        <img src="https://camp.potepan.com/wp-content/themes/potepancamp/assets/images/engineer-conpany-logo03.png" alt="engineer-conpany-logo03">
-                      </div>
-                      <div class="engineer-profile">
-                        <img src="https://camp.potepan.com/wp-content/themes/potepancamp/assets/images/engineer-logo03.png" alt="engineer-logo03">
-                        <p class="engineer-name contents-tidy">
-                          <span>株式会社Readyfor</span>
-                          Railsエンジニア
-                        </p>
-                      </div>
-                      <div class="engineer-text">
-                        <p>プログラミング上達には根気強くプログラミングを書くしかありません。わからない点はサポートしますので一緒に頑張っていきましょう。</p>
-                      </div> 
-                    </div>
-                  </div>
-                </div>
-              </li>
-            </ol>
-          </div>      
-        </div>          
-      </section>
-      <!--04.POTEPAN CAMPの選べるコース-->
-      <section class="main-section top-potepan">
-        <div class="content-width">
-          <header class="section-header contents-tidy bottom-line">
-            <h2 class="section-main-heading">
-              <span>POTEPAN CAMP</span>
-              の選べるコース
-            </h2>
-            <p class="section-sub-heading">
-              <span>PsOTEPAN CAMP</span>
-              では複数のコースから目的別で選べる
+            <p class="detail-text detail-text--emphasis">
+              <span class="under-decoration">
+                今後エンジニアとしてのキャリアを
+                <br>
+                形成していきたい方
+              </span>
             </p>
-          </header>
-          <div class="section-content">
-            <ul class="course-list">
-              <li>
-                <a class="course-media contents-tidy open" href="https://camp.potepan.com/course/#webapp">
-                  <div class="course-title contents-tidy">
-                    <h3>
-                      Webアプリケーション
-                      <br>
-                      コース
-                    </h3>
+            <p class="detail-text detail-text--emphasis">
+              <span class="under-decoration">
+                今後自分でサービスを作ったり
+                <br>
+                副業で仕事を獲得したい方
+              </span>
+            </p>
+            <p class="detail-text detail-text--emphasis">
+              <span class="under-decoration">
+                プログラミングスキルを身に着けて
+                <br>
+                今の仕事に活かしたい方
+              </span>
+            </p>
+            <p class="detail-text">
+                様々な背景を持った方にご受講いただいております。
+                <span class="pc-br">実際のコース決定は社内のカウンセリング担当と行いますのでご安心ください。</span>
+            </p>
+            <!--全コースの共通POINT-->
+            <div class="detail-point">
+              <p class="list-no contents-tidy">
+                <span class="list-no-image">
+                  <img src="https://camp.potepan.com/wp-content/themes/potepancamp/assets/images/heading-icon.png">
+                </span>
+              </p>
+              <h3 class="detail-point-title">全コースの共通POINT</h3>
+              <div class="detail-box contents-tidy">
+                <div class="detail-cassette">
+                  <h4 class="detail-cassette-title">実践課題とレビューが充実！</h4>
+                  <div class="detail-cassette-image">
+                    <img src="https://camp.potepan.com/wp-content/themes/potepancamp/assets/images/detail-cassette-image03.png" alt="実践課題とレビューが充実！">
                   </div>
-                  <div class="course-contents">
-                    <p class="course-text orange">初心者からプログラミングを使えるようになるためのスタンダードコース</p>
-                    <div>
-                      <p>応募条件</p>
-                      <ul class="conditions-list">
-                        <li class="list-marker">
-                          Windows or MacのPCを持っている方
-                        </li>
-                      </ul>
-                    </div>
-                    <p class="course-link hover-text-color">
-                      詳しくはこちら
-                    </p>
-                  </div>
-                </a>
-              </li>
-              <li>
-                <a class="course-media contents-tidy career" href="https://camp.potepan.com/course/#railscareer">
-                  <div class="course-title contents-tidy">
-                    <h3>
-                      Railsキャリア
-                      <br>
-                      コース
-                    </h3>
-                  </div>
-                  <div class="course-contents">
-                    <p class="course-text red">初心者からエンジニア転職を目指す方向けのエキスパートコース</p>
-                    <div>
-                      <p>応募条件</p>
-                      <ul class="conditions-list">
-                        <li class="list-marker">
-                          MacのPCを持っている方
-                        </li>
-                      </ul>
-                    </div>
-                    <p class="course-link hover-text-color">
-                      詳しくはこちら
-                    </p>
-                  </div>
-                </a>
-              </li>
-            </ul>
-            <div class="section-button">
-              <a href="https://camp.potepan.com/course" class="link-button hover-opacity">
-                <span>COURSE</span>
-                <span>コース・料金</span>
-              </a>
-            </div>
-          </div>
-        </div>
-      </section>
-      <!--05.サービスの想い-->
-      <section class="main-section top-service">
-        <div class="content-width">
-          <header class="section-header contents-tidy bottom-line">
-            <h2 class="section-main-heading">サービスの想い</h2>
-            <p class="section-sub-heading">ポテパンのプログラミング学習についてかける想い</p>
-          </header>
-          <div class="section-content">
-            <h3 class="message-title">MESSAGE</h3>
-            <div class="message-contents contents-tidy">
-              <div class="message-text">
-                <div>
-                  <p>
-                    ポテパンではエンジニア転職支援サービスを運営しており、8000名以上のエンジニア様と1500社以上の採用企業様と取引がございます。開発がしっかりとできるエンジニアを育て、エンジニア不足を解決できないかと考えスクール事業を始めました。
+                  <p class="detail-cassette-text">
+                    現場で通用する開発スキルを習得
                   </p>
-                  <p>
-                    エンジニア転職のノウハウと、企業側から随時フィードバックをもらうことで、エンジニアになる上での最適なカリキュラムをご用意することができました。
+                </div>
+                <div class="detail-cassette">
+                  <h4 class="detail-cassette-title">安心のチャットサポート！</h4>
+                  <div class="detail-cassette-image">
+                    <img src="https://camp.potepan.com/wp-content/themes/potepancamp/assets/images/detail-cassette-image01.png" alt="安心のチャットサポート！">
+                  </div>
+                  <p class="detail-cassette-text">
+                    わからない所は気軽に質問
                   </p>
-                  <p>
-                    「エンジニアになりたい」「サービスを作りたい」など本気でプログラミングを勉強したいという方に、是非ご利用いただければと思っております。
+                </div>
+                <div class="detail-cassette">
+                  <h4 class="detail-cassette-title">1ヶ月間のスタートサポート付き！</h4>
+                  <div class="detail-cassette-image">
+                    <img src="https://camp.potepan.com/wp-content/themes/potepancamp/assets/images/detail-cassette-image02.png" alt="1ヶ月間のスタートサポート付き！">
+                  </div>
+                  <p class="detail-cassette-text">
+                    週1回のメンタリングでサポート
                   </p>
                 </div>
               </div>
-              <div class="message-thumbnail">
-                <p>
-                  株式会社ポテパン
-                  <br>
-                  代表取締役
-                  <span>宮崎</span>
-                </p>
-                <img src="https://camp.potepan.com/wp-content/themes/potepancamp/assets/images/message-thumbnail.png">
+            </div>
+            <div class="detail-course-block-box">
+              <div class="detail-course-block">
+                <div class="detail-course-head">
+                  <span>教養や副業を目指す学習に最適</span>
+                  <p>Webアプリケーションコース</p>
+                </div>
+                <div class="detail-course-content">
+                  <p class="detail-course-content-price">
+                    200,000
+                  </p>
+                  <p class="detail-course-content-body">
+                     Webサイトを作る上で必要な知識を全体的にわかりやすく学習できるコースです。実践課題とコードレビューが豊富でしっかりと身に付けたい方におすすめです！教養としての学習や副業獲得を目指す方に最適なコースとなります。
+                  </p>
+                </div>
+                <div class="detail-course-content detail-course-term">2ヶ月間（8週間）</div>
+                <div class="detail-course-content">
+                  目安学習時間
+                  <span>160時間</span>
+                </div>
+                <div class="detail-course-content">
+                  チャットサポート
+                  <span>◯</span>
+                </div>
+                <div class="detail-course-content">
+                  スタートサポート
+                  <span>◯</span>
+                </div>
+                <div class="detail-course-content detail-course-anchor">
+                  <a href="https://camp.potepan.com/course#webapp">
+                    詳しく見る
+                  </a>
+                </div>
+              </div>
+              <div class="detail-course-block">
+                <div class="detail-course-head">
+                  <span>エンジニア転職に必要な全てが詰まった</span>
+                  <p>Railsキャリアコース</p>
+                </div>
+                <div class="detail-course-content">
+                  <p class="detail-course-content-price">
+                    400,000
+                  </p>
+                  <p class="detail-course-content-body">
+                    エンジニアになるために必要なカリキュラムが全て詰まったコースです。基礎から難易度の高い発展まで学習し、現役エンジニアによる細かい指摘と、キャリアカウンセラーによる転職サポートでエンジニア転職を成功させます。
+                  </p>
+                </div>
+                <div class="detail-course-content detail-course-term">5ヶ月間（20週間）</div>
+                <div class="detail-course-content">
+                  目安学習時間
+                  <span>400時間</span>
+                </div>
+                <div class="detail-course-content">
+                  チャットサポート
+                  <span>◯</span>
+                </div>
+                <div class="detail-course-content">
+                  スタートサポート
+                  <span>◯</span>
+                </div>
+                <div class="detail-course-content detail-course-anchor">
+                  <a href="https://camp.potepan.com/course#railscareer">
+                    詳しく見る
+                  </a>
+                </div>
               </div>
             </div>
           </div>
         </div>
       </section>
-      <!--06.受講生の声-->
-      <section class="main-section">
+      <!--コースプラン-->
+      <section class="main-section course-plan">
+        <div class="content-width">
+          <header class="section-header contents-tidy bottom-line">
+            <h2 class="section-main-heading about-title">コースプラン</h2>
+          </header>
+          <div class="section-content">
+            <div class="plan-box" id="webspp">
+              <p class="plan-sub-head">教養や副業を目指す学習に最適</p>
+              <h3  class="plan-head">
+                Webアプリケーションコース
+              </h3>
+              <div class="plan-cassettes">
+                <h4 class="plan-cassettes-head">おすすめポイント</h4>
+                <ul class="plan-cassettes-list">
+                  <li class="list-content contents-tidy">良く使うポイントをまとめたカリキュラムで無駄なく学べる！</li>
+                  <li class="list-content contents-tidy">実際に作る課題とレビューが豊富にあるからスキルが身につく！</li>
+                  <li class="list-content contents-tidy">毎日10時〜23時まで幅広く使える技術質問サポート！</li>
+                </ul>
+              </div>
+              <div class="plan-cassettes">
+                <h4 class="plan-cassettes-head">コース概要</h4>
+                <dl class="plan-cassettes-desc">
+                  <dt class="desc-title contents-tidy detail">受講内容</dt>
+                  <dd class="desc-text">
+                    <div>
+                      <p>HTML/CSSの基礎〜実践&レビュー</p>
+                      <p>JavaScriptの基礎〜実践&レビュー</p>
+                      <p>Rubyの基礎〜実践&レビュー</p>
+                      <p>Ruby on Railsの基礎〜実践&レビュー</p>
+                      <p>他 SQL/Git/コマンドライン etc</p>
+                    </div>
+                  </dd>
+                  <dt class="desc-title contents-tidy term">受講期間</dt>
+                  <dd class="desc-text central">
+                    <p>2ヶ月間（8週間）</p>
+                  </dd>
+                  <dt class="desc-title contents-tidy condition">応募条件</dt>
+                  <dd class="desc-text central">
+                    <div>
+                      <p>メモリ8GB以上のPC(Mac or Windows)を所持</p>
+                    </div>
+                  </dd>
+                  <dt class="desc-title contents-tidy fee">受講料金</dt>
+                  <dd class="desc-text central">200,000円（税抜）</dd>
+                </dl>
+              </div>
+              <div class="plan-cassettes">
+                <h4 class="plan-cassettes-head">学習内容</h4>
+                <div class="plan-cassettes-tools">
+                  <div class="plan-cassettes-tool">
+                    <div>
+                      <img src="https://camp.potepan.com/wp-content/themes/potepancamp/assets/images/course/thumbnail-html5+ss3.svg" alt="HTML&CSS">
+                    </div>
+                    <div class="plan-cassettes-tool-box">
+                      <p class="plan-cassettes-tool-label">HTML / CSS</p>
+                      <p class="plan-cassettes-tool-body">HTML / CSSの基礎学習とサイト模写などの実践課題を行い、綺麗なサイトを作れるようにします。</p>
+                    </div>
+                  </div>
+                  <div class="plan-cassettes-tool">
+                    <div>
+                      <img src="https://camp.potepan.com/wp-content/themes/potepancamp/assets/images/course/thumbnail-js.svg" alt="JavaScript">
+                    </div>
+                    <div class="plan-cassettes-tool-box">
+                      <p class="plan-cassettes-tool-label">JavaScript</p>
+                      <p class="plan-cassettes-tool-body">JavaScriptの基礎学習を行い、ストップウォッチや電卓などのアプリ開発とレビューを行います。</p>
+                    </div>
+                  </div>
+                  <div class="plan-cassettes-tool">
+                    <div>
+                      <img src="https://camp.potepan.com/wp-content/themes/potepancamp/assets/images/course/thumbnail-ruby.svg" alt="Ruby">
+                    </div>
+                    <div class="plan-cassettes-tool-box">
+                      <p class="plan-cassettes-tool-label">Ruby</p>
+                      <p class="plan-cassettes-tool-body">Rubyの基礎学習を行い、メモアプリやじゃんけんアプリの開発とレビューを行います。</p>
+                    </div>
+                  </div>
+                  <div class="plan-cassettes-tool">
+                    <div>
+                      <img src="https://camp.potepan.com/wp-content/themes/potepancamp/assets/images/course/thumbnail-rubyonrails.svg" alt="Ruby on Rails">
+                    </div>
+                    <div class="plan-cassettes-tool-box">
+                      <p class="plan-cassettes-tool-label">Ruby on Rails</p>
+                      <p class="plan-cassettes-tool-body">Ruby on Railsの基礎を学び、マッチングサイトを開発しレビューを行います。</p>
+                    </div>
+                  </div>
+                  <div class="plan-cassettes-tool">
+                    <div>
+                      <img src="https://camp.potepan.com/wp-content/themes/potepancamp/assets/images/course/thumbnail-sql.svg" alt="SQL">
+                    </div>
+                    <div class="plan-cassettes-tool-box">
+                      <p class="plan-cassettes-tool-label">SQL</p>
+                      <p class="plan-cassettes-tool-body">SQLを学び、必要なデータを出し入れ出来るようなスキルを身に付けます。</p>
+                    </div>
+                  </div>
+                  <div class="plan-cassettes-tool">
+                    <div>
+                      <img src="https://camp.potepan.com/wp-content/themes/potepancamp/assets/images/course/thumbnail-commandline.svg" alt="コマンドライン">
+                    </div>
+                    <div class="plan-cassettes-tool-box">
+                      <p class="plan-cassettes-tool-label">コマンドライン</p>
+                      <p class="plan-cassettes-tool-body">コマンドラインを学び、ファイルの操作やGitなどスムーズに使えるようにします。</p>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="plan-box" id="railscareer">
+              <p class="plan-sub-head">エンジニア転職に必要な全てが詰まった</p>
+              <h3  class="plan-head">Railsキャリアコース</h3>
+              <div class="plan-cassettes">
+                <h4 class="plan-cassettes-head">おすすめポイント</h4>
+                <ul class="plan-cassettes-list">
+                  <li class="list-content contents-tidy">エンジニア転職実績豊富な5ヶ月間の実践カリキュラム</li>
+                  <li class="list-content contents-tidy">経験豊富な現役エンジニア陣による徹底レビューでスキルアップ</li>
+                  <li class="list-content contents-tidy">毎日10時〜23時まで幅広く使える技術質問サポート！</li>
+                  <li class="list-content contents-tidy">毎日10時〜専任のキャリアカウンセラーによる転職サポート！</li>
+                </ul>
+              </div>
+              <div class="plan-cassettes">
+                <h4 class="plan-cassettes-head">コース概要</h4>
+                <dl class="plan-cassettes-desc">
+                  <dt class="desc-title contents-tidy detail">受講内容</dt>
+                  <dd class="desc-text">
+                    <div>
+                      <p>HTML/CSSの基礎〜実践&レビュー</p>
+                      <p>JavaScriptの基礎〜実践&レビュー</p>
+                      <p>Rubyの基礎〜実践&レビュー</p>
+                      <p>Ruby on Railsの基礎〜実践&レビュー</p>
+                      <p>現場形式のWebアプリ開発と現役エンジニアによる細かいレビュー</p>
+                      <p>専任のキャリアカウンセラーによる転職サポート</p>
+                      <p>他 RSpec/Docker/CircleCI/SQL/Git/コマンドライン etc</p>
+                    </div>
+                  </dd>
+                  <dt class="desc-title contents-tidy term">受講期間</dt>
+                  <dd class="desc-text central">
+                    <p>5ヶ月間（20週間）</p>
+                  </dd>
+                  <dt class="desc-title contents-tidy condition">応募条件</dt>
+                  <dd class="desc-text central">
+                    <div>
+                      <p>メモリ8GB以上のMacを所持</p>
+                    </div>
+                  </dd>
+                  <dt class="desc-title contents-tidy fee">受講料金</dt>
+                  <dd class="desc-text central">400,000円（税抜）</dd>
+                </dl>
+              </div>
+              <div class="plan-cassettes plan-cassettes-skipping">
+                <div class="plan-cassettes-skipping-left">
+                  <img src="https://camp.potepan.com/wp-content/themes/potepancamp/assets/images/course/icon-pricedown.svg" alt="飛び級イメージ">
+                </div>
+                <div class="plan-cassettes-skipping-right">
+                  <h4>
+                    あなたの持っている
+                    <br>
+                    スキル分、料金を圧縮
+                  </h4>
+                  <p>キャリアコースは<span>現在の学習状況に応じて飛び級でスタート可能</span>です。<br>無料カウンセリングにて現在のスキルをチェックをさせていただき、<span>対象者の方は期間や料金を圧縮</span>することができます。</p>
+                </div>
+              </div>
+              <div class="plan-cassettes">
+                <h4 class="plan-cassettes-head">学習内容</h4>
+                <div class="plan-cassettes-tools">
+                  <div class="plan-cassettes-tool">
+                    <div>
+                      <img src="https://camp.potepan.com/wp-content/themes/potepancamp/assets/images/course/thumbnail-html5+ss3+js.svg" alt="HTML / CSS / Javascript">
+                    </div>
+                    <div class="plan-cassettes-tool-box">
+                      <p class="plan-cassettes-tool-label">HTML / CSS / Javascript</p>
+                      <p class="plan-cassettes-tool-body">HTML/CSSを用いた綺麗なコーディングスキル。さらに非同期処理を含めたJavaScript開発スキルを学びます</p>
+                    </div>
+                  </div>
+                  <div class="plan-cassettes-tool">
+                    <div>
+                      <img src="https://camp.potepan.com/wp-content/themes/potepancamp/assets/images/course/thumbnail-ruby+rubyonrails+rspec.svg" alt="Ruby / Ruby on Rails / Rspec">
+                    </div>
+                    <div class="plan-cassettes-tool-box">
+                      <p class="plan-cassettes-tool-label">Ruby / Ruby on Rails / Rspec</p>
+                      <p class="plan-cassettes-tool-body">Ruby・Ruby on Rails・Rspecを用いた動的なサイトの実装からtest開発まで</p>
+                    </div>
+                  </div>
+                  <div class="plan-cassettes-tool">
+                    <div>
+                      <img src="https://camp.potepan.com/wp-content/themes/potepancamp/assets/images/course/thumbnail-sql.svg" alt="SQL">
+                    </div>
+                    <div class="plan-cassettes-tool-box">
+                      <p class="plan-cassettes-tool-label">SQL</p>
+                      <p class="plan-cassettes-tool-body">SQLを学び、必要なデータを出し入れ出来るようなスキルを身に付けます。</p>
+                    </div>
+                  </div>
+                  <div class="plan-cassettes-tool">
+                    <div>
+                      <img src="https://camp.potepan.com/wp-content/themes/potepancamp/assets/images/course/thumbnail-commandline.svg" alt="コマンドライン">
+                    </div>
+                    <div class="plan-cassettes-tool-box">
+                      <p class="plan-cassettes-tool-label">コマンドライン</p>
+                      <p class="plan-cassettes-tool-body">コマンドラインを学び、ファイルの操作やGitなどスムーズに使えるようにします。</p>
+                    </div>
+                  </div>
+                  <div class="plan-cassettes-tool">
+                    <div>
+                      <img src="https://camp.potepan.com/wp-content/themes/potepancamp/assets/images/course/thumbnail-git.svg" alt="Git">
+                    </div>
+                    <div class="plan-cassettes-tool-box">
+                      <p class="plan-cassettes-tool-label">Git</p>
+                      <p class="plan-cassettes-tool-body">Gitを用いた開発フローを理解して、現場でも適切なGit操作をできるようにします。</p>
+                    </div>
+                  </div>
+                  <div class="plan-cassettes-tool">
+                    <div>
+                      <img src="https://camp.potepan.com/wp-content/themes/potepancamp/assets/images/course/thumbnail-docker+circleci.svg" alt="DockerやCircleCIを使った環境構築">
+                    </div>
+                    <div class="plan-cassettes-tool-box">
+                      <p class="plan-cassettes-tool-label">DockerやCircleCIを使った環境構築</p>
+                      <p class="plan-cassettes-tool-body">現場で使われているインフラ環境を用いての開発を行い、現場とのギャップを埋めていきます。</p>
+                    </div>
+                  </div>
+                  <div class="plan-cassettes-tool">
+                    <div>
+                      <img src="https://camp.potepan.com/wp-content/themes/potepancamp/assets/images/course/thumbnail-api.svg" alt="API使用/開発スキル">
+                    </div>
+                    <div class="plan-cassettes-tool-box">
+                      <p class="plan-cassettes-tool-label">API使用/開発スキル</p>
+                      <p class="plan-cassettes-tool-body">APIを用いたアプリケーションの開発とレビューを細かく受ける事で、品質の高いアプリケーション構築を学習します。</p>
+                    </div>
+                  </div>
+                  <div class="plan-cassettes-tool">
+                    <div>
+                      <img src="https://camp.potepan.com/wp-content/themes/potepancamp/assets/images/course/thumbnail-faq.svg" alt="質問の仕方/検索の仕方">
+                    </div>
+                    <div class="plan-cassettes-tool-box">
+                      <p class="plan-cassettes-tool-label">質問の仕方/検索の仕方</p>
+                      <p class="plan-cassettes-tool-body">エラーにつまづいた時の調べ方や、解決の仕方、品質の大事さを学ぶ事でスクールの後も自走できるようにします。</p>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+      <!--受講生の声-->
+      <section class="main-section pick-up-contents">
         <div class="content-width">
           <header class="section-header contents-tidy bottom-line">
             <h2 class="section-main-heading">受講生の声</h2>
-            <p class="section-sub-heading">当スクールの卒業生にインタビュー</p>
           </header>
-          <div class="section-content">
-            <ul class="interview-list contents-tidy">
-              <li>
-                <a class="interview-media" href="https://camp.potepan.com/interview/691">
-                  <div class="interview-media-thumbnail">
-                    <img class="hover-scale sp-dn" src="https://camp.potepan.com/wp-content/uploads/2020/12/131478795_397238574816551_3842722825712242700_n.jpg">
-                    <img class="pc-dn" src="https://camp.potepan.com/wp-content/uploads/2020/12/131478795_397238574816551_3842722825712242700_n.jpg">
-                    <div class="interview-thumbnail-titlebox">
-                      <p class="interview-thumbnail-title">
-                        選抜クラス　キャリアコース
-                      </p>
-                      <p class="interview-thumbnail-subtitle">
-                        <span>
-                          <span class="name">H.Y</span>さん
-                        </span> 
-                        <span>前職：メガネ量販店の販売員</span>
-                      </p>
-                    </div>
+          <div class="section-content contents">
+            <div class="pick-up-contents-background" style="height: 0px; width: 684px;"></div>
+            <div class="pick-up-contents-list contents-tidy">
+              <div class="pick-up-contents-cassette">
+                <a class="pick-up-contents-media" href="https://camp.potepan.com/interview/691">
+                  <div class="pick-up-contents-media-thumbnail">
+                    <img class="hover-scale" src="https://camp.potepan.com/wp-content/uploads/2020/12/131478795_397238574816551_3842722825712242700_n.jpg" alt="contents-thumbnail">
                   </div>
-                  <p class="interview-media-text hover-text-color">
-                    30歳で、メガネ量販店の販売員から受託企業のエンジニアに転職成功されたH.Yさん。30歳での未経験転職の心得などお伺いしました！      
+                  <p class="pick-up-contents-media-text hover-text-color">
+                    30歳で、メガネ量販店の販売員から受託企業のエンジニアに転職成功されたH.Yさん。30歳での未経験転職の心得などお伺いしました！
                   </p>
                 </a>
-              </li>
-              <li>
-                <a class="interview-media" href="https://camp.potepan.com/interview/682">
-                  <div class="interview-media-thumbnail">
-                    <img class="hover-scale sp-dn" src="https://camp.potepan.com/wp-content/uploads/2020/12/131642156_424437235605511_6615809243046174971_n-2.jpg">
-                    <img class="pc-dn" src="https://camp.potepan.com/wp-content/uploads/2020/12/131642156_424437235605511_6615809243046174971_n-2.jpg">
-                    <div class="interview-thumbnail-titlebox">
-                      <p class="interview-thumbnail-title">
-                        選抜クラス ビギナーコース          
-                      </p>
-                      <p class="interview-thumbnail-subtitle">
-                        <span>
-                          <span class="name">A.K</span>さん
-                        </span>
-                        <span>前職：セラピスト</span>
-                      </p>
-                    </div>
+              </div>
+              <div class="pick-up-contents-cassette">
+                <a class="pick-up-contents-media" href="https://camp.potepan.com/interview/682">
+                  <div class="pick-up-contents-media-thumbnail">
+                    <img class="hover-scale" src="https://camp.potepan.com/wp-content/uploads/2020/12/131642156_424437235605511_6615809243046174971_n-2.jpg" alt="contents-thumbnail">
                   </div>
-                  <p class="interview-media-text hover-text-color">
-                    美容師やセラピストとして働かれたあとに、ポテパンキャンプを受講し美容系スタートアップにWebエンジニアとして転職成功されたA.Kさん。異業種からの転職成功の秘訣をお伺いしました！          
+                  <p class="pick-up-contents-media-text hover-text-color">
+                    美容師やセラピストとして働かれたあとに、ポテパンキャンプを受講し美容系スタートアップにWebエンジニアとして転職成功されたA.Kさん。異業種からの転職成功の秘訣をお伺いしました！
                   </p>
                 </a>
-              </li>
-              <li>
-                <a class="interview-media" href="https://camp.potepan.com/interview/675">
-                  <div class="interview-media-thumbnail">
-                    <img class="hover-scale sp-dn" src="https://camp.potepan.com/wp-content/uploads/2020/11/坂本さん.jpg">
-                    <img class="pc-dn" src="https://camp.potepan.com/wp-content/uploads/2020/11/坂本さん.jpg">
-                    <div class="interview-thumbnail-titlebox">
-                      <p class="interview-thumbnail-title">
-                        選抜クラス ビギナーコース          
-                      </p>
-                      <p class="interview-thumbnail-subtitle">
-                        <span>
-                          <span class="name">S.Y</span>さん
-                        </span>
-                        <span>前職：コンサルティングファーム</span>
-                      </p>
-                    </div>
+              </div>
+              <div class="pick-up-contents-cassette">
+                <a class="pick-up-contents-media" href="https://camp.potepan.com/interview/675">
+                  <div class="pick-up-contents-media-thumbnail">
+                    <img class="hover-scale" src="https://camp.potepan.com/wp-content/uploads/2020/11/坂本さん.jpg" alt="contents-thumbnail">
                   </div>
-                  <p class="interview-media-text hover-text-color">
-                    コンサルティングファームからスタートアップにWebエンジニアとして転職したS.Yさん。全くの異業種からエンジニアに転職された背景についてお伺いしました！            
+                  <p class="pick-up-contents-media-text hover-text-color">
+                    コンサルティングファームからスタートアップにWebエンジニアとして転職したS.Yさん。全くの異業種からエンジニアに転職された背景についてお伺いしました！
                   </p>
                 </a>
-              </li>
-            </ul>
-            <div class="section-button">
-              <a href="https://camp.potepan.com/interview" class="link-button hover-opacity">
-                <span>INTERVIEW</span>
-                <span>受講生の声</span>
-              </a>
+              </div>
             </div>
-          </div>
-        </div>
-      </section>
-      <!--07.POTEPAN CAMPが運用するサービス-->
-      <section class="main-section top-potepan">
-        <div class="content-width">
-          <header class="section-header contents-tidy bottom-line">
-            <h2 class="section-main-heading">
-              POTEPANが運用するサービス
-            </h2>
-            <p class="section-sub-heading">ポテパンのサイトをチェック</p>
-          </header>
-          <div class="section-content">
-            <ul class="service-list contents-tidy">
-              <li>
-                <a class="service-media" href="https://freelance.potepan.com/" target="_blank">
-                  <div class="service-media-thumbnail red">
-                    <img class="hover-scale" src="https://camp.potepan.com/wp-content/themes/potepancamp/assets/images/service-media-thumbnail01.png" alt="service-media-thumnail01">
-                  </div>
-                  <p class="service-media-text hover-text-color">ポテパンフリーランスは、フリーランス初心者のエンジニアに案件情報を紹介するサービスです。</p>
-                </a>
-              </li>
-              <li>
-                <a class="service-media" href="https://career.potepan.com/" target="_blank">
-                  <div class="service-media-thumbnail green">
-                    <img class="hover-scale" src="https://camp.potepan.com/wp-content/themes/potepancamp/assets/images/service-media-thumbnail02.png" alt="service-media-thumnail02">
-                  </div>
-                  <p class="service-media-text hover-text-color">技術のわかるエージェントがあなたの転職をサポートするサービスです。</p>
-                </a>
-              </li>
-              <li>
-                <a class="service-media" href="https://style.potepan.com/" target="_blank">
-                  <div class="service-media-thumbnail black">
-                    <img class="hover-scale" src="https://camp.potepan.com/wp-content/themes/potepancamp/assets/images/service-media-thumbnail04.png" alt="service-media-thumnail04">
-                  </div>
-                  <p class="service-media-text hover-text-color">エンジニアのためのお役立ちコンテンツを厳選してお送りしているサービスです。</p>
-                </a>
-              </li>
-            </ul>
           </div>
         </div>
       </section>
@@ -505,42 +511,42 @@
     <!--フッター-->
     <footer class="site-footer">
       <div class="site-footer-main contents-tidy content-width">
-        <a class="page-top-button jsi-page-top contents-tidy" href="#page-top">
+        <a class="page-top-button contents-tidy" href="https://camp.potepan.com/course#page-top">
           <p class="page-top-arrow">page-top-arrow</p>
         </a>
         <ul class="footer-nav">
           <li>
-            <a class="footer-nav-item" href="https://camp.potepan.com/about">
-              About
+            <a class="footer-nav-item" href="https://camp.potepan.com/about/">
+              ABOUT
               <span>初めての方へ</span>
             </a>
           </li>
           <li>
-            <a class="footer-nav-item" href="https://camp.potepan.com/flow">
+            <a class="footer-nav-item" href="https://camp.potepan.com/flow/">
               FLOW
               <span>卒業までの流れ</span>
             </a>
           </li>
           <li>
-            <a class="footer-nav-item" href="https://camp.potepan.com/course">
-              COURS
+            <a class="footer-nav-item" href="https://camp.potepan.com/about/">
+              COURSE
               <span>コース・料金</span>
             </a>
           </li>
           <li>
-            <a class="footer-nav-item" href="https://camp.potepan.com/interview">
+            <a class="footer-nav-item" href="https://camp.potepan.com/interview/">
               INTERVIEW
               <span>受講者の声</span>
             </a>
           </li>
           <li>
-            <a class="footer-nav-item" href="https://camp.potepan.com/faq">
+            <a class="footer-nav-item" href="https://camp.potepan.com/faq/">
               FAQ
-              <span>よくある質問</span>
+              <span>受講者の声</span>
             </a>
           </li>
           <li>
-            <a class="footer-nav-item" href="https://camp.potepan.com/company">
+            <a class="footer-nav-item" href="https://camp.potepan.com/company/">
               COMPANY
               <span>会社概要</span>
             </a>
@@ -550,35 +556,56 @@
           <img src="https://camp.potepan.com/wp-content/themes/potepancamp/assets/images/footer-potepanda.png" alt="ポテパンダ">
         </div>
         <address class="footer-info">
-          <a class="footer-logo hover-opacity" href="#page-top">
+          <a href="https://camp.potepan.com/" class="footer-logo hover-opacity">
             <img src="https://camp.potepan.com/wp-content/themes/potepancamp/assets/images/footer-logo.png" alt="POTEPAN CAMP">
           </a>
           <p class="footer-company">株式会社ポテパン</p>
           <p class="footer-address">
-                  〒150-0002
-              <br>
-                  東京都渋谷区渋谷2-2-5
-              <br>
-                  クルスビル7階
+            〒150-0002
+            <br>
+            東京都渋谷区渋谷2－2－5
+            <br>
+            クルスビル7階      
           </p>
-        　<ul class="footer-social">
-        　   <li>
-        　    <a class="footer-social-item hover-opacity" href="https://www.facebook.com/potepan1/" target="_blank">
-        　      <img src="https://camp.potepan.com/wp-content/themes/potepancamp/assets/images/footer-social-facebook.png" alt="Facebook">
-        　    </a>
-        　   </li>
-      　     <li>
-      　      <a class="footer-social-item hover-opacity" href="https://twitter.com/potepan0901" target="_blank">
-      　        <img src="https://camp.potepan.com/wp-content/themes/potepancamp/assets/images/footer-social-twitter.png" alt="Twitter">
-      　      </a>
-      　     </li>
-        　</ul>
+          <ul class="footer-social">
+            <li>
+              <a class="footer-social-item hover-opacity" href="https://www.facebook.com/potepan1/" target="_blank">
+                <img src="https://camp.potepan.com/wp-content/themes/potepancamp/assets/images/footer-social-facebook.png" alt="Facebook">
+              </a>
+            </li>
+            <li>
+              <a class="footer-social-item hover-opacity" href="https://twitter.com/potepan0901" target="_blank">
+                <img src="https://camp.potepan.com/wp-content/themes/potepancamp/assets/images/footer-social-twitter.png" alt="Twitter">
+              </a>
+            </li>
+          </ul>
         </address>
       </div>
       <div class="site-footer-sub content-width">
         <small class="footer-copyright">©2014-2020 POTEPAN.INC.</small>
-      </div> 
+      </div>
     </footer>
   </body>
-  
 </html>
+                
+        
+
+ 
+
+
+
+
+
+
+
+
+
+
+
+      
+
+
+
+
+
+
