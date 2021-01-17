@@ -1,63 +1,39 @@
-<!DOCTYPE html>
-<html>
+<html lang="en">
   <head>
-    <meta charset="UTF-8">
-    <title>電卓</title>
+    <meta charset="utf-8">
     <link rel="stylesheet" href="styles.css">
+    <script src="https://code.jquery.com/jquery-3.4.1.min.js"></script>
+    <title>リアルタイムフィルター</title>
   </head>
   <body>
-    <div class="container">
-      <table>
-        <tr>
-          <input class="display">
-        </tr>
-        <tr>
-          <td><button onclick="append( '7' )" >7</button></td>
-          <td><button onclick="append( '8' )" >8</button></td>
-          <td><button onclick="append( '9' )" >9</button></td>
-          <td><button onclick="append( '+' )" >+</button></td>
-        <tr>
-        </tr>
-          <td><button onclick="append( '4' )" >4</button></td>
-          <td><button onclick="append( '5' )" >5</button></td>
-          <td><button onclick="append( '6' )" >6</button></td>
-          <td><button onclick="append( '-' )" >-</button></td>
-        </tr>
-        <tr>
-          <td><button onclick="append( '1' )" >1</button></td>
-          <td><button onclick="append( '2' )" >2</button></td>
-          <td><button onclick="append( '3' )" >3</button></td>
-          <td><button onclick="append( '*' )" >×</button></td>
-        </tr>
-        <tr>
-          <td><button onclick="append( '0' )" >0</button></td>
-          <td><button onclick="append( '00' )" >00</button></td>
-          <td><button onclick="append( '.' )" >.</button></td>
-          <td><button onclick="append( '/' )" >÷</button></td>
-        </tr>
-        <tr>
-          <td colspan="2"><button onclick="update( '' ) " >AC</button></td>
-          <td colspan="2"><button onclick="calc()" >=</button></td>
-        </tr>
-      </table>
-    </div>
-    <script>
-      {
-        function update( _v ) {
-            document.querySelector( 'input' ).value = _v
-        }
-      
-        function append( _v ) {
-            document.querySelector( 'input' ).value += _v
-        }
-        
-        function calc() {
-            const v = document.querySelector( 'input' ).value
-            const f = new Function( 'return ' + v );
-            update( f().toString() )
-        }
-        
-      }
-    </script>  
+   <div class="header">
+     <h2 class="header-title">リアルタイムフィルター</h2>
+   </div>
+   <div class="search-box">
+     <input name="search_input"id="search" type="text" placeholder="キーワードを入力">
+   </div>
+   <div class="image-wrapper">
+     <div class="image-content1 design">
+       <img src="https://www.pakutaso.com/shared/img/thumb/uni20614IMG_0704_TP_V.jpg">
+       <p>キーワード</p>
+       <p class="image-text1">犬　いぬ dog</p>
+     </div>
+     <div class="image-content2 design">
+       <img src="https://www.pakutaso.com/shared/img/thumb/tomcat1582_TP_V.jpg">
+       <p>キーワード</p>
+       <p  class="image-text2">猫　ネコ cat</p>
+     </div>
+     <div class="image-content3 design">
+       <img src="https://www.pakutaso.com/shared/img/thumb/uni20160715150317_TP_V.jpg">
+       <p>キーワード</p>
+       <p  class="image-text3">鳥 トリ bird</p>
+     </div>
+     <div class="image-content4 design">
+       <img src="https://www.pakutaso.com/shared/img/thumb/pirania0_TP_V.jpg">
+       <p>キーワード</p>
+       <p  class="image-text4">魚 サカナ fish</p>
+     </div>
+   </div>
+  <script src="main.js"></script> 
   </body>
 </html>

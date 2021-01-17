@@ -1,65 +1,29 @@
-'use strict';
-
-{
-    const timer = document.getElementById('timer');
-    const start = document.getElementById('start');
-    const stop = document.getElementById('stop');
-    const reset = document.getElementById('reset');
-    
-    let startTime;
-    let timeoutId
-    let elapsedTime = 0;
-    
-    function countUp() {
-        
-        const d = new Date(Date.now() - startTime + elapsedTime);
-        const h = d.getUTCHours();
-        const m = d.getMinutes();
-        const s = d.getSeconds();
-        const ms = d.getMilliseconds();
-        timer.textContent = `${h}:${m}:${s}:${ms}`;
-        
-        timeoutId = setTimeout(() => {
-            countUp();
-        }, 10);
+/* global $*/
+$("input[name = 'search_input']").keyup(function() {
+  let serchText = $(this).val();
+  console.log("serchText")
+   let target1 = $(".image-text1").text();
+  if (target1.indexOf(serchText) >= 0) {
+        $(".image-content1").removeClass("hidden");
+    } else {
+        $(".image-content1").addClass("hidden");
     }
-    
-    function setButtonStateInitial() {
-        start.disabled = false;
-        stop.disabled = true;
-        reset.disabled = true;
+  let target2 = $(".image-text2").text();
+  if (target2.indexOf(serchText)>= 0) {
+        $(".image-content2").removeClass("hidden");
+    } else {
+        $(".image-content2").addClass("hidden");
     }
-    
-    function setButtonStateRunning() {
-        start.disabled = true;
-        stop.disabled = false;
-        reset.disabled = true;
+    let target3 = $(".image-text3").text();
+  if (target3.indexOf(serchText)>= 0) {
+        $(".image-content3").removeClass("hidden");
+    } else {
+        $(".image-content3").addClass("hidden");
     }
-    
-    function setButtonStateStopped() {
-        start.disabled = false;
-        stop.disabled = true;
-        reset.disabled = false;
+    let target4 = $(".image-text4").text();
+  if (target4.indexOf(serchText)>= 0) {
+        $(".image-content4").removeClass("hidden");
+    } else {
+        $(".image-content4").addClass("hidden");
     }
-    
-    setButtonStateInitial();
-
-    
-    start.addEventListener('click', () => {
-        setButtonStateRunning()
-        startTime = Date.now();
-        countUp();
-    })
-    
-    stop.addEventListener('click', () => {
-        setButtonStateStopped()
-        clearTimeout(timeoutId)
-        elapsedTime += Date.now() - startTime;
-    });
-
-    reset.addEventListener('click', () => {
-        setButtonStateInitial()
-        timer.textContent = '0:0:0:0';
-        elapsedTime = 0 ;
-    });
-}
+});
