@@ -1,39 +1,21 @@
-<html lang="en">
+<!DOCTYPE html>
+<html lang="ja">
   <head>
     <meta charset="utf-8">
-    <link rel="stylesheet" href="styles.css">
-    <script src="https://code.jquery.com/jquery-3.4.1.min.js"></script>
-    <title>リアルタイムフィルター</title>
+    <title>スライドショー</title>
+    <link rel="stylesheet" type="text/css" href="//cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick-theme.css"/>
+    <link rel="stylesheet" type="text/css" href="styles.css">
+    <link rel="stylesheet" type="text/css" href="https://cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.css"/>
   </head>
   <body>
-   <div class="header">
-     <h2 class="header-title">リアルタイムフィルター</h2>
-   </div>
-   <div class="search-box">
-     <input name="search_input"id="search" type="text" placeholder="キーワードを入力">
-   </div>
-   <div class="image-wrapper">
-     <div class="image-content1 design">
-       <img src="https://www.pakutaso.com/shared/img/thumb/uni20614IMG_0704_TP_V.jpg">
-       <p>キーワード</p>
-       <p class="image-text1">犬　いぬ dog</p>
-     </div>
-     <div class="image-content2 design">
-       <img src="https://www.pakutaso.com/shared/img/thumb/tomcat1582_TP_V.jpg">
-       <p>キーワード</p>
-       <p  class="image-text2">猫　ネコ cat</p>
-     </div>
-     <div class="image-content3 design">
-       <img src="https://www.pakutaso.com/shared/img/thumb/uni20160715150317_TP_V.jpg">
-       <p>キーワード</p>
-       <p  class="image-text3">鳥 トリ bird</p>
-     </div>
-     <div class="image-content4 design">
-       <img src="https://www.pakutaso.com/shared/img/thumb/pirania0_TP_V.jpg">
-       <p>キーワード</p>
-       <p  class="image-text4">魚 サカナ fish</p>
-     </div>
-   </div>
-  <script src="main.js"></script> 
+    <ul class="slider">
+      <li><img src="https://publicdomainq.net/images/201807/03s/publicdomainq-0023778vkr.jpg"></li>
+      <li><img src="https://publicdomainq.net/images/201708/19s/publicdomainq-0012409oqe.jpg"></li>
+      <li><img src="https://pictkan.com/uploads/converted/15/07/10/2539819437-machu-picchu-43387_1920-2k3j-1920x1280-MM-100.jpg"></li>
+      <li><img src="https://publicdomainq.net/images/201708/21s/publicdomainq-0012466xci.jpg"></li>
+    </ul>
+    <script src="https://cdn.jsdelivr.net/npm/jquery@3/dist/jquery.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.min.js"></script>
+    <script src="main.js"></script>
   </body>
 </html>

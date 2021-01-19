@@ -1,24 +1,20 @@
-h2 {
-  text-align:center;
+body {
+  width: 600px;
 }
-.search-box {
-  text-align: center;
+li {
+   vertical-align: bottom;
 }
-.search-box input {
-  width:600px;
+img {
+  width: 100%;
 }
-.image-wrapper {
-  display:flex;
-  flex-wrap:wrap;
+.slick-prev {
+    left: 50px;
+    z-index: 10;
 }
-.design {
-  margin-left:auto;
-  margin-right:auto;
-  margin-top:50px;
+.slick-next {
+    right: 10px;
 }
-.design img {
-  width:600px;
-}
-.hidden {
-  display:none;
+.slick-prev:before,
+.slick-next:before {
+    color: #000;
 }
